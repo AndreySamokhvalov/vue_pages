@@ -4,7 +4,7 @@
 
     <div class="content">
       <HeaderComp />
-<!-- 
+      <!-- 
       <div class="qwe">
         <img class="banner" alt="banner" src="@/assets/banner.jpg">
       </div> -->
@@ -12,6 +12,7 @@
       <HomePage />
       <ProjectContent />
       <BlogList />
+      <PDComp />
 
       <FooterComp />
     </div>
@@ -27,7 +28,8 @@ import FooterComp from './components/FooterComp.vue';
 import LinesComp from './components/LinesComp.vue';
 // import ProjectContent from './components/ProjectContent.vue';
 // import HomePage from './components/HomePage.vue';
-import CompBlog from './components/CompBlog.vue';
+// import CompBlog from './components/CompBlog.vue';
+import PDComp from './components/PDComp.vue';
 
 
 export default {
@@ -39,10 +41,11 @@ export default {
     LinesComp,
     // ProjectContent,
     // HomePage,
-    CompBlog
-  
-},
-  computed:{
+    // CompBlog,
+    PDComp
+
+  },
+  computed: {
     ...mapState(['blogs']),
     ...mapGetters(['getKit', 'getBath']),
     // ...mapGetters(['getBlogs']),
