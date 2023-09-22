@@ -14,7 +14,7 @@
 
 
                 <div class="brscrmbs">
-                    <h2 class="banner__intro_text">Home / Blog</h2>
+                    <h2 class="banner__intro_text"><router-link to="/homepage" class="header__right_link banner__intro_text">Home</router-link> / <router-link to="/blogdetailspage" class="header__right_link banner__intro_text">Blog</router-link></h2>
                 </div>
             </div>
         </div>
@@ -221,6 +221,7 @@
 </template>
 
 <script>
+
 export default {
     name: 'CompBlog',
 

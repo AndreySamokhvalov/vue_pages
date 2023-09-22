@@ -35,9 +35,9 @@
       </div>
       <div class="pages">
         <h2 class="footer__section">Pages</h2>
-        <a href="#" class="pages__link_brdcrmb footer__text">Home</a>
-        <a href="#" class="pages__link_brdcrmb footer__text">Project</a>
-        <a href="#" class="pages__link_brdcrmb footer__text">Blog</a>
+        <router-link to="/homepage" class="header__right_link pages__link_brdcrmb footer__text">Home</router-link>
+        <router-link to="/projectdetailspage" class="header__right_link pages__link_brdcrmb footer__text">Project</router-link>
+        <router-link to="/blogdetailspage" class="header__right_link pages__link_brdcrmb footer__text">Blog</router-link>
       </div>
       <div class="contact">
         <h2 class="footer__section footer__text">Contact</h2>

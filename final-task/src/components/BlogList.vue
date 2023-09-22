@@ -1,5 +1,9 @@
-<template>
+<template><div>
+    <img class="banner" alt="banner" src="@/assets/banner.jpg">
     <div class="blog__list_elem center">
+        <!-- <div class="qwe center"> -->
+        
+      <!-- </div> -->
         <div class=" blog__list">
             <ol style="list-style-type: none">
 
@@ -24,6 +28,7 @@
             </div>
 
         </div>
+    </div>
     </div>
 </template>
 
@@ -108,15 +113,40 @@ export default {
 <style lang="scss" scoped>
 .blog__list_elem {
 
-    width: 1200px;
+    
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
     flex-wrap: wrap;
 }
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(50% - 900px);
+    margin-right: calc(50% - 900px);
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+// .qwe {
+    
+//     // width: 2400px;
+//     display: flex;
+//     padding-left: calc(50% - 1200px);
+//     padding-right: calc(50% - 1200px);
+//     flex-direction: row;
+//     align-items: flex-start;
+//     justify-content: space-around;
 
-
+// }
+.general {
+    max-width: 1300px;
+    overflow: hidden;
+    margin: 0 auto;
+    position: relative;
+}
 .component__none {
     display: none;
 }

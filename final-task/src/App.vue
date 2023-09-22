@@ -4,16 +4,7 @@
 
     <div class="content">
       <HeaderComp />
-      <!-- 
-      <div class="qwe">
-        <img class="banner" alt="banner" src="@/assets/banner.jpg">
-      </div> -->
-      <CompBlog />
-      <HomePage />
-      <ProjectContent />
-      <BlogList />
-      <PDComp />
-
+      <router-view />
       <FooterComp />
     </div>
   </div>
@@ -22,33 +13,26 @@
 <script>
 import { mapState } from 'vuex';
 import { mapGetters } from 'vuex';
-// import BlogList from './components/BlogList.vue';
+
 import HeaderComp from './components/HeaderComp.vue';
 import FooterComp from './components/FooterComp.vue';
 import LinesComp from './components/LinesComp.vue';
-// import ProjectContent from './components/ProjectContent.vue';
-// import HomePage from './components/HomePage.vue';
-// import CompBlog from './components/CompBlog.vue';
-import PDComp from './components/PDComp.vue';
 
 
 export default {
   name: 'App',
   components: {
-    // BlogList,
+
     HeaderComp,
     FooterComp,
     LinesComp,
-    // ProjectContent,
-    // HomePage,
-    // CompBlog,
-    PDComp
+
 
   },
   computed: {
     ...mapState(['blogs']),
     ...mapGetters(['getKit', 'getBath']),
-    // ...mapGetters(['getBlogs']),
+
   },
 }
 </script>
@@ -72,7 +56,7 @@ export default {
 
 .banner {
   display: flex;
-  /* margin-bottom: 100px; */
+
   flex-direction: row;
   justify-content: space-around;
   align-items: flex-start;

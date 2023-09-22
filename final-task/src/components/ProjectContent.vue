@@ -1,11 +1,11 @@
 <template>
     <div class="project">
         <div class="qwe ">
-            <img class="banner" alt="banner" src="@/assets/banner.jpg">
+            <img class="banner" alt="banner" src="@/assets/projbanner.png">
             <div class="heading__in center">
                 <h1 class="heading__in_title">Our Project</h1>
                 <div class="brscrmbs">
-                    <h2 class="banner__intro_text">Home / Blog</h2>
+                    <h2 class="banner__intro_text"><router-link to="/homepage" class="header__right_link banner__intro_text">Home</router-link>/    <router-link to="/blogdetailspage" class="banner__intro_text header__right_link">Blog</router-link></h2>
                 </div>
             </div>
         </div>
